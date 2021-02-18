@@ -1,0 +1,31 @@
+{
+  "name": "SimpleBOT",
+  "version": "1.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm index.js",
+    "devStart": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Gordol@bitbucket.org/Gordol/discord-bot.git"
+  },
+  "author": "Gordol",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Gordol/discord-bot#readme",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "discord.js": "^12.5.1",
+    "ffmpeg-static": "^4.2.7",
+    "get-video-duration": "^3.0.2",
+    "get-video-id": "^3.1.5",
+    "rimraf": "^3.0.2",
+    "youtube-dl": "^3.0.2",
+    "youtube-thumbnail": "^1.3.0",
+    "yt-scraper-badfix": "0.0.2",
+    "ytdl-core": "^4.1.1",
+    "ytdl-core-discord": "^1.2.4",
+    "ytfps": "^1.0.2"
+  }
+}

@@ -30,7 +30,7 @@ module.exports.ServerConnection = class ServerConnection {
 
         }
 
-        if (message.author.channel === undefined) {
+        if (message.member.voice.channel != undefined) {
 
             if (message.content.startsWith('!shake set 1')) {
                 if (message.member.hasPermission("ADMINISTRATOR")) {
@@ -61,7 +61,11 @@ module.exports.ServerConnection = class ServerConnection {
 
         }
 
-        if (message.content.startsWith('!shake')) {
+        else{
+            message.reply('You need to be connected to a voice channel in order to do that!')
+        }
+
+        if (message.content.startsWith('!shake') && message.mentions.members.first()!=undefined) {
             if (message.member.hasPermission("ADMINISTRATOR")) {
                 Shake.Shake(message.mentions.members.first())
                 message.delete();

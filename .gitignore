@@ -1,5 +1,4 @@
 node_modules/
-token_file.js
 package-lock.json
 audio/ghe/
 audio/ora_easteregg/*.mp3
